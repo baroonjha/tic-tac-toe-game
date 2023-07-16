@@ -38,7 +38,7 @@ const Board = () => {
         setShowButton(true); 
       }
 }
-    
+
 
    const handelReset=()=>{
        setState(Array(9).fill(null))
@@ -73,11 +73,7 @@ const Board = () => {
 
         </div>
         {/* <button disabled={Array(9).findOne(null)} onClick={handelReset}>Play Again</button> */}
-<<<<<<< HEAD
         {showButton && <button onClick={handelReset}>Restart</button>}
-=======
-        <button style={{margin:'20px'}} onClick={handelReset}>Restart Again</button>
->>>>>>> 7902b366c7557c147642650b252b9de3466ed380
         
 
         </>

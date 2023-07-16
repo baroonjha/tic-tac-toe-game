@@ -3,6 +3,9 @@
   padding: 0px;
   background-color: rgb(176, 245, 222);
 }
+body{
+  margin: 30px;
+}
 .board-container{
   /* margin-top: 20px; */
   width: 200px;
@@ -25,7 +28,7 @@
 
 h1{
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
    color: rgb(0, 0, 0);
 }
 button{

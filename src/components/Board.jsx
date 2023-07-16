@@ -33,7 +33,7 @@ const Board = () => {
     //making xturn false 
     setXTurn(!isXTurn)
 }
-
+    
 
    const handelReset=()=>{
     setState(Array(9).fill(null))
@@ -67,6 +67,7 @@ const Board = () => {
 
         </div>
         {/* <button disabled={Array(9).findOne(null)} onClick={handelReset}>Play Again</button> */}
+        <button style={{margin:'20px'}} onClick={handelReset}>Restart Again</button>
         
         </>
         )}

@@ -34,7 +34,7 @@ const Board = () => {
     setState(copyState)
     //making xturn false 
     setXTurn(!isXTurn)
-    if (copyState.includes(null)) {
+    if (!copyState.includes(null)) {
         setShowButton(true); 
       }
 }

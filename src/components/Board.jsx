@@ -4,6 +4,8 @@ import Square from './Square'
 const Board = () => {
      const [state, setState] = useState(Array(9).fill(null))
      const [isXTurn, setXTurn] = useState(true)
+     const [showButton, setShowButton] = useState(false);
+
      const checkWinner =()=>{
         const winner =[
             [0, 1, 2],
@@ -32,11 +34,15 @@ const Board = () => {
     setState(copyState)
     //making xturn false 
     setXTurn(!isXTurn)
+    if (copyState.includes(null)) {
+        setShowButton(true); 
+      }
 }
-    
+
 
    const handelReset=()=>{
-    setState(Array(9).fill(null))
+       setState(Array(9).fill(null))
+       setShowButton(false);
    }
 
   return (
@@ -67,8 +73,9 @@ const Board = () => {
 
         </div>
         {/* <button disabled={Array(9).findOne(null)} onClick={handelReset}>Play Again</button> */}
-        <button style={{margin:'20px'}} onClick={handelReset}>Restart Again</button>
+        {showButton && <button onClick={handelReset}>Restart</button>}
         
+
         </>
         )}
         

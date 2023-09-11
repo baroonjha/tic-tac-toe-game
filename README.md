@@ -1,6 +1,6 @@
 # Tic Tac Toe game built in React 
 ## Live Demo of the app availabe here:
-[https://ttt-497b-onrender.com/]
+[click here](https://tic-tac-toe-game-pink-nu.vercel.app/)
 
 ## Available Scripts
 ### Forked the repo first
